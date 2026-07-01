@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All POST</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h1>Quora Posts</h1>
-   <% for(post of posts){ %> 
-        <div class="post">
-            <h3 class="user">@<%= post.username  %></h3>
-            <h4 class="content"><%= post.content  %></h4>
-            <br>
-            <a href="http://localhost:8080/posts/<%=post.id  %>">See in Deatil</a>
+    <h1>Welcome to My Blog Website</h1>
+    <p>This is my first Express + Ejs project.</p>
+    <a href="/create">
+      <button>Create New Blog</button>
+    </a>
+    <hr>
+    <h2>All Blogs</h2>
+    <% blogs.forEach((blog, index) =>{ %>
+       <div class="blog-card">
+        <a href="/blog/<%= index  %>">Read More</a>
+        <h3><%= blog.title %></h3>
+        <p><strong>Author:</strong><%= blog.author %></p>
+        <p><%= blog.content %></p>
         </div>
-   <% } %> 
-      
-   <br><br>
-   <a href="http://localhost:8080/posts/new">Create New Post</a>
+        <hr>
+    <% }) %>
   </body>
 </html>
