@@ -1,32 +1,97 @@
 body {
-  margin: 0;
+  margin: 20px;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
-  text-align: center;
+  background-color: #f5f5f5;
 }
 
 h1 {
-  margin-top: 60px;
-  color: #333;
+  color: maroon;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-p {
-  color: #666;
+.post {
+  background-color: blanchedalmond;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.user {
+  font-style: italic;
+  color: maroon;
+  margin-bottom: 10px;
+}
+
+.content {
   font-size: 18px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+a {
+  color: royalblue;
+  text-decoration: none;
+  margin-right: 10px;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 button {
-  margin-top: 20px;
-  padding: 10px 10px;
+  background-color: crimson;
+  color: white;
   border: none;
-  background-color: royalblue;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: darkred;
+}
+
+.create {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: seagreen;
   color: white;
   border-radius: 5px;
+  text-decoration: none;
+}
+.create:hover {
+  background-color: darkgreen;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+.post {
+  width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: blanchedalmond;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: maroon;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
 }
-
-button:hover {
-  background-color: #1d4ed8;
+button {
+  background-color: #5a0000;
 }
-
