@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Post in Detail</title>
+    <title>View Blog</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h2>Here is your post in deatil</h2>
-    <p>Post id: <%= post.id %></p>
-    <div class="post">
-      <h3 class="user">user name : <%= post.username %></h3>
-      <h4>content: <%= post.content %></h4>
-    </div>
+    <h1><%= blog.title %></h1>
+    <h3>By <%= blog.author %></h3>
+
+    <hr />
+
+    <p><%= blog.content %></p>
+
+    <br />
+
+    <a href="/"> Back to Home</a>
   </body>
 </html>
